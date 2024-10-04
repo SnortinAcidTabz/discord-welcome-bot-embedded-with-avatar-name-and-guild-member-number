@@ -13,16 +13,16 @@ async def on_ready():
 
 @Bot.event
 async def on_member_join(member):
-    channel = Bot.get_channel(1284220765419602035)
+    channel = Bot.get_channel(*your channel id here*)
     if channel:
         embed = discord.Embed(
             title=f'Welcome {member.name} your the sluttiest of sluts',
             description=f'Dont be a fucktard and have fun {member.mention}!',
-            color=discord.Color.dark_gold()
+            color=discord.Color.*your color here*()
         )
 
         embed.set_thumbnail(url=member.display_avatar.url)
         embed.set_footer(text=f'member #{len(member.guild.members)}')
         await channel.send(embed=embed)
 
-Bot.run(your key here)
+Bot.run(*your key here*)
